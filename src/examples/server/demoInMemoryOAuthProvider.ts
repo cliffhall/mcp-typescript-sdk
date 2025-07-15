@@ -9,16 +9,26 @@ import { resourceUrlFromServerUrl } from '../../shared/auth-utils.js';
 
 
 export class DemoInMemoryClientsStore implements OAuthRegisteredClientsStore {
-  private clients = new Map<string, OAuthClientInformationFull>();
+  private clients = new Map<string, OAuthClientInformationFull>([
+    // 👇 Preregistered OAuth client here
+    [
+      "preregistered-client-id",
+      {
+        client_id: "preregistered-client-id",
+        redirect_uris: ["http://localhost:6274/oauth/callback"],
+        scope: "mcp:tools",
+      },
+    ],
+  ]);
 
   async getClient(clientId: string) {
     return this.clients.get(clientId);
   }
 
-  async registerClient(clientMetadata: OAuthClientInformationFull) {
+/*  async registerClient(clientMetadata: OAuthClientInformationFull) {
     this.clients.set(clientMetadata.client_id, clientMetadata);
     return clientMetadata;
-  }
+  }*/
 }
 
 /**
