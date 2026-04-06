@@ -1,5 +1,12 @@
 # @modelcontextprotocol/core
 
+## 2.0.0-alpha.2
+
+### Patch Changes
+
+- [#1768](https://github.com/modelcontextprotocol/typescript-sdk/pull/1768) [`866c08d`](https://github.com/modelcontextprotocol/typescript-sdk/commit/866c08d3640c5213f80c3b4220e24c42acfc2db8) Thanks [@felixweinberger](https://github.com/felixweinberger)! - Allow additional JSON
+  Schema properties in elicitInput's requestedSchema type by adding .catchall(z.unknown()), matching the pattern used by inputSchema. This fixes type incompatibility when using Zod v4's .toJSONSchema() output which includes extra properties like $schema and additionalProperties.
+
 ## 2.0.0-alpha.1
 
 ### Minor Changes
