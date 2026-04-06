@@ -1,5 +1,15 @@
 # @modelcontextprotocol/client
 
+## 2.0.0-alpha.3
+
+### Patch Changes
+
+- [#1655](https://github.com/modelcontextprotocol/typescript-sdk/pull/1655) [`1eb3123`](https://github.com/modelcontextprotocol/typescript-sdk/commit/1eb31236e707c4f4ab9234d87db21ab3f34bf0bc) Thanks [@nielskaspers](https://github.com/nielskaspers)! - fix(client): append custom
+  Accept headers to spec-required defaults in StreamableHTTPClientTransport
+
+    Custom Accept headers provided via `requestInit.headers` are now appended to the spec-mandated Accept types instead of being overwritten. This ensures the required media types (`application/json, text/event-stream` for POST; `text/event-stream` for GET SSE) are always present
+    while allowing users to include additional types for proxy/gateway routing.
+
 ## 2.0.0-alpha.2
 
 ### Patch Changes

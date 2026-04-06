@@ -42,6 +42,7 @@
     "fix-session-status-codes",
     "fix-stdio-epipe-crash",
     "fix-stdio-windows-hide",
+    "fix-streamable-close-reentrant",
     "fix-streamable-http-error-response",
     "fix-task-session-isolation",
     "fix-transport-exact-optional-property-types",
@@ -49,6 +50,7 @@
     "funky-baths-attack",
     "heavy-walls-swim",
     "oauth-error-http200",
+    "odd-forks-enjoy",
     "quick-islands-occur",
     "reconnection-scheduler",
     "remove-websocket-transport",
@@ -63,6 +65,7 @@
     "tender-snails-fold",
     "token-provider-composable-auth",
     "twelve-dodos-taste",
-    "use-scopes-supported-in-dcr"
+    "use-scopes-supported-in-dcr",
+    "zod-json-schema-compat"
   ]
 }
